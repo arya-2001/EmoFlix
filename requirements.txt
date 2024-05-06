@@ -1,4 +1,4 @@
-Gunicorn
+uvicorn
 absl-py
 astunparse
 beautifulsoup4
