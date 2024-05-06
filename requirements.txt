@@ -46,7 +46,6 @@ tensorboard
 tensorboard-data-server
 tensorflow
 tensorflow-intel
-tensorflow-io-gcs-filesystem
 termcolor
 threadpoolctl
 tmdbv3api
