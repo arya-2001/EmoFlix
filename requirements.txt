@@ -1,58 +1,59 @@
-absl-py==0.15.0  # Updated version
-astunparse==1.6.3
-beautifulsoup4==4.12.3
-blinker==1.7.0
-bs4==0.0.2
-certifi==2024.2.2
-charset-normalizer==3.3.2
-click==8.1.7
-colorama==0.4.6
-Flask==2.0.3  # Downgraded version to maintain compatibility
-flatbuffers==2.0  # Downgraded version to maintain compatibility
-gast==0.4.0  # Downgraded version to maintain compatibility
-google-pasta==0.2.0
-grpcio==1.62.1
-h5py==3.1.0  # Downgraded version to maintain compatibility
-idna==3.7
-importlib-metadata==4.11.0  # Updated package name
-itsdangerous==2.1.0  # Updated version
-Jinja2==3.1.3
-joblib==1.0.1  # Updated version
-keras==2.6.0  # Updated version
-libclang==18.1.1
-Markdown==3.3.4  # Updated version
-markdown-it-py==3.0.0
-MarkupSafe==2.1.5
-mdurl==0.1.2
-ml-dtypes==0.3.2
-namex==0.0.8
-numpy==1.21.4  # Updated version
-opencv-python==4.5.4.60  # Updated version
-opt-einsum==3.3.0
-optree==0.11.0
-packaging==24.0
-pandas==1.3.4  # Updated version
-protobuf==3.19.4  # Updated version
-Pygments==2.11.2  # Updated version
-python-dateutil==2.8.2  # Updated version
-pytz==2021.3  # Downgraded version to maintain compatibility
-requests==2.26.0  # Updated version
-rich==12.15.0  # Updated version
-scikit-learn==1.0.2  # Updated version
-scipy==1.7.3  # Updated version
-six==1.16.0
-sklearn==0.0
-soupsieve==2.5
-tensorboard==2.6.0  # Updated version
-tensorboard-data-server==0.7.3  # Updated version
-tensorflow==2.6.0  # Updated version
-tensorflow-io-gcs-filesystem==0.21.0  # Updated version
-termcolor==1.1.0  # Updated version
-threadpoolctl==3.0.0  # Updated version
-tmdbv3api==1.9.0
-typing-extensions==3.10.0.2  # Updated version
-tzdata==2021.5  # Downgraded version to maintain compatibility
-urllib3==1.26.7  # Updated version
-Werkzeug==2.0.3  # Downgraded version to maintain compatibility
-wrapt==1.12.1  # Updated version
-zipp==3.7.0  # Updated version
+absl-py
+astunparse
+beautifulsoup4
+blinker
+bs4
+certifi
+charset-normalizer
+click
+colorama
+Flask
+flatbuffers
+gast
+google-pasta
+grpcio
+h5py
+idna
+importlib_metadata
+itsdangerous
+Jinja2
+joblib
+keras
+libclang
+Markdown
+markdown-it-py
+MarkupSafe
+mdurl
+ml-dtypes
+namex
+numpy
+opencv-python
+opt-einsum
+optree
+packaging
+pandas
+protobuf
+Pygments
+python-dateutil
+pytz
+requests
+rich
+scikit-learn
+scipy
+six
+sklearn
+soupsieve
+tensorboard
+tensorboard-data-server
+tensorflow
+tensorflow-intel
+tensorflow-io-gcs-filesystem
+termcolor
+threadpoolctl
+tmdbv3api
+typing_extensions
+tzdata
+urllib3
+Werkzeug
+wrapt
+zipp
