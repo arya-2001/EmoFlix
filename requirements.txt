@@ -37,8 +37,6 @@ scikit-learn
 scipy
 six
 soupsieve
-tensorboard
-tensorflow
 termcolor
 threadpoolctl
 tmdbv3api
