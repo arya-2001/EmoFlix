@@ -38,7 +38,7 @@ scipy
 six
 soupsieve
 tensorboard
-tensorflow<2.7
+tensorflow<2.7,>=2.6
 termcolor
 threadpoolctl
 tmdbv3api
