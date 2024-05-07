@@ -1,8 +1,5 @@
 absl-py
 astunparse
-beautifulsoup4
-blinker
-bs4
 certifi
 charset-normalizer
 click
@@ -17,9 +14,7 @@ idna
 importlib_metadata
 itsdangerous
 Jinja2
-joblib
 keras
-libclang
 Markdown
 markdown-it-py
 MarkupSafe
@@ -43,9 +38,7 @@ scipy
 six
 soupsieve
 tensorboard
-tensorboard-data-server
-tensorflow
-tensorflow-intel
+tensorflow<2.7
 termcolor
 threadpoolctl
 tmdbv3api
