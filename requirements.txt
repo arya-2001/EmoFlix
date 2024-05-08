@@ -2,5 +2,5 @@ absl-py
 Flask
 keras
 numpy
-cv2
+opencv-python
 requests
