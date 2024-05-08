@@ -1,0 +1,678 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    height: 100%;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    background-image: url("https://wallpaperaccess.com/full/4839516.jpg");
+    opacity: 0.8; /* Adjust opacity here (0 to 1) */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    position: fixed;
+    z-index: -9999;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#img{
+    width: 300px;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    width: 100%;
+    z-index: 99999;
+    background-color: transparent;
+
+}
+
+.nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-color: rgba(115, 213, 238, 0.75);
+}
+
+.nav__logo {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f30707; /* Change the color as needed */
+}
+
+.nav__logo img {
+    width: 80px; /* Adjust the width of the logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and text */
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 30px; /* Add spacing between menu items */
+    width: 30px;
+}
+
+.nav__link {
+    text-decoration: none;
+    /* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; */
+}
+
+.nav__link img {
+    max-width: 30px; /* Eikhane chobi gulo er maximum width set korecho */
+    height: auto; /* Eita diye image gulo er aspect ratio maintain hobe */
+    /* margin-right: 50px; */
+    transition: transform 0.9s ease;
+}
+
+.nav__link:hover img {
+    transform: rotate(360deg); /* Eikhane hover korle chobi gulo 360 degree rotate hobe */
+}
+
+.nav__link:hover {
+    transform: scale(1.02);
+}
+
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#videoContainer {
+display: flex;
+justify-content: center; /* Horizontally center the child element */
+margin-bottom: 5px;
+}
+
+#videoFeed {
+max-width: 100%;
+height: auto;
+margin-top: 5px;
+border: 2px solid #333; /* Border properties */
+border-radius: 10px; /* Rounded corners */
+display: block; /* Ensures image behaves as block element */
+}
+
+#toggleBtn {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 10px auto;
+    
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+#recommendBtn{
+justify-content: center;
+align-items: center;
+display: inline-block;
+margin: 10px auto;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#snap-btn{
+justify-content: center;
+align-items: center;
+display: block;
+margin: 10px auto;
+margin-bottom: 20px;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#retake-btn {
+justify-content: center;
+align-items: center;
+display: block;
+margin: 10px auto;
+margin-bottom: 20px;
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#result {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #080808; /* Default background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #faf8f8; /* Text color */
+}
+
+#result:hover{
+    transform: scale(1.02);
+    background-color: rgb(30, 82, 238);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(58, 197, 232, 0.733);
+}
+
+
+
+#closeMovie {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+
+#snap-btn:hover, #retake-btn:hover, #recommendBtn:hover, #toggleBtn:hover, #closeMovie:hover {
+transform: scale(1.02);
+background-color: rgb(30, 82, 238); /* Semi-transparent background color */
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(58, 197, 232, 0.733);
+}
+
+
+#movieList {
+margin-top: 15px;
+display: flex;
+justify-content: center; /* Center the divs horizontally */
+flex-wrap: wrap; /* Allow divs to wrap to the next line */
+
+}
+
+#movieList div {
+display: inline-block;
+flex: 0 0 auto; /* Allow divs to shrink and grow as needed */
+width: 200px; /* Set width for each movie tile */
+margin: 10px; /* Add margin around each movie tile */
+padding: 10px; /* Add padding inside each movie tile */
+background-color: #fbfbfb;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#movieList div:hover {
+transform: scale(1.15);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(1, 47, 58, 0.733);
+}
+
+#movieList h3 {
+margin: 0;
+padding-bottom: 10px;
+font-size: 18px;
+white-space: nowrap; /* Prevent title from wrapping */
+overflow: hidden; /* Hide overflowing text */
+text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
+}
+
+#movieList img {
+max-width: 100%;
+border-radius: 5px;
+}
+
+.emotion {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 90px;
+background-color: rgba(115, 213, 238, 0.75);
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(115, 213, 238, 0.937);
+margin-inline: auto;
+height: auto;
+width: 740px;
+}
+
+#text {
+    font-family: "Poppins", sans-serif; /* Set a fallback font */
+    font-size: 16px; /* Set the font size */
+    line-height: 1.6; /* Set the line height for better readability */
+    color: #333; /* Set the text color */
+    margin: 20px;
+    text-align: justify; /* Add some margin around the text */
+}
+
+#text p {
+    margin-bottom: 20px; /* Increase space between paragraphs */
+}
+
+#text p:last-child {
+    font-weight: bold; /* Bold the last paragraph */
+}
+
+#text p:first-child {
+    font-weight: bold;
+    text-align: center; 
+    font-size: 16px;/* Bold the last paragraph */
+}
+
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    width: 1200px;
+    margin-top: 50px;
+    background-color: rgba(115, 213, 238, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(115, 213, 238, 0.937);
+    position: relative; /* Add position relative to the movie list */
+    z-index: 1;
+}
+
+.popup {
+    display: none;
+    position: relative; /* Change position to absolute */
+    z-index: 9999; /* Keep the z-index */
+    width: 80%;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px;
+    height: auto;
+    border-radius: 10px;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+
+.poster {
+    flex: 0 0 30%; /* Adjust the width of the poster */
+    
+}
+
+.poster img {
+    width: 100%; /* Make sure the poster fills the container */
+    height: 100%;
+    border: #fff;
+    border-radius: 10px;
+}
+
+.info {
+    flex: 1; /* Fill remaining space */
+    margin-left: 15px;
+    background-color: rgba(240, 248, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#trailer {
+    display: none;
+    position: relative;
+    bottom: -66%; /* Adjust as needed to position it below the popup */
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    z-index: 10000;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    height: auto;
+    background-color:rgba(115, 213, 238, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(115, 213, 238, 0.937);
+    overflow: hidden;
+}
+
+#trailer-container {
+    position: relative;
+    padding-top: 56.25%; /* Aspect ratio 16:9 for responsive video */
+}
+
+#trailer-container iframe {
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 20px); /* Adjust as needed */
+    height: calc(100% - 20px); /* Adjust as needed */
+    border: 0;
+}
+
+
+#closeTrailer {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#closeTrailer:hover {
+    color: #ff5555; /* Change color on hover */
+}
+#movieOverview {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#play, #more {
+    justify-content: center;
+    align-items: center;
+    display: inline-block; /* Change display to inline-block */
+    margin: 10px; /* Adjust margin as needed */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#play:hover, #more:hover {
+    transform: scale(1.02);
+    background-color: rgb(30, 82, 238); /* Semi-transparent background color */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(58, 197, 232, 0.733);
+}
+
+.close {
+    color: #f80000;
+    margin-left: 15px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #e90000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#scrollToTopBtn img:hover {
+    transform: rotate(360deg);
+}
+
+/*=============== FOOTER ===============*/
+
+.footer{
+    overflow: hidden;
+  }
+  
+  .footer__container{
+    position: relative;
+    padding-block: 2rem 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-color: rgba(115, 213, 238, 0.75);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(115, 213, 238, 0.937);
+  }
+  
+  .footer__logo,
+  .footer__social-link,
+  .footer__copy{
+    color: #ef0d0d;
+  }
+  
+  .footer__logo{
+    display: inline-block;
+    font-size: 2.25rem;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 5px;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer__social{
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+  }
+  
+  .footer__social-link{
+    font-size: 1.75rem;
+    transition: color .3s;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer__social-link:hover,
+  .footer__logo:hover {
+    color: hsl(0, 100%, 2%);
+  }
+  
+  .footer__copy{
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  ul {
+    padding-inline-start: 0px;
+}
+
+/* Common styles for all screen sizes */
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust styles for smaller screens */
+    .nav__list {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    .nav__item {
+        margin: 10px 0; /* Add spacing between stacked navigation items */
+    }
+}
+
+/* Media query for screens between 601px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Adjust styles for medium-sized screens */
+    .container {
+        max-width: 600px; /* Reduce maximum width of the container */
+    }
+}
+
+/* Media query for screens larger than 901px */
+@media screen and (min-width: 901px) {
+    /* Adjust styles for large screens */
+    .container {
+        max-width: 800px; /* Keep maximum width of the container */
+    }
+}
+
+/* Normal styles */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    body {
+      padding: 10px;
+    }
+  
+    .nav__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .nav__item {
+      margin: 10px 0;
+    }
+  
+    .nav__link img {
+      max-width: 25px;
+    }
+  
+    #title img {
+      width: 200px;
+    }
+  
+    .emotion {
+      width: 90%;
+      margin-top: 20px;
+    }
+  
+    .movie {
+      width: 100%;
+    }
+  
+    .popup {
+      width: 90%;
+      bottom: -20%;
+    }
+  
+    #trailer {
+      width: 90%;
+      bottom: -60%;
+    }
+  
+    .footer__container {
+      padding: 20px;
+    }
+  
+    .footer__logo {
+      font-size: 28px;
+    }
+  
+    .footer__social-link {
+      font-size: 24px;
+    }
+  
+    .footer__copy {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media queries for even smaller screens */
+  @media screen and (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+    .nav__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav__item {
+      margin: 10px 0;
+    }
+  
+    .nav__link img {
+      max-width: 20px;
+    }
+  
+    #title img {
+      width: 150px;
+    }
+  
+    .emotion {
+      width: 95%;
+      margin-top: 10px;
+    }
+  
+    .movie {
+      width: 95%;
+    }
+  
+    .popup {
+      width: 95%;
+      height: 55%;
+    }
+  
+    #trailer {
+      width: 95%;
+      bottom: -50%;
+    }
+  
+    .footer__container {
+      padding: 15px;
+    }
+  
+    .footer__logo {
+      font-size: 24px;
+    }
+  
+    .footer__social-link {
+      font-size: 20px;
+    }
+  
+    .footer__copy {
+      font-size: 12px;
+    }
+  }
+  
