@@ -41,7 +41,6 @@ rich
 scikit-learn
 scipy
 six
-sklearn
 soupsieve
 tensorboard
 tensorboard-data-server
@@ -57,4 +56,3 @@ urllib3
 Werkzeug
 wrapt
 zipp
-
