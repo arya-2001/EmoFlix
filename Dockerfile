@@ -1,7 +1,7 @@
-FROM python:3.9-alpine
+FROM python:3.9-bullseye
 
-#RUN apt update -y && apt install awscli -y
-RUN apt install awscli -y
+RUN apt update -y && apt install awscli -y
+#RUN apt install awscli -y
 WORKDIR /app
 
 COPY . /app
