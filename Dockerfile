@@ -1,4 +1,4 @@
-FROM python:3.9-bullseye
+FROM python:3.9-slim-buster
 
 RUN apt update -y && apt install awscli -y
 #RUN apt install awscli -y
