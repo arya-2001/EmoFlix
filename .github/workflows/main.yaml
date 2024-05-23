@@ -88,7 +88,14 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
-          docker ps -q --filter "name=emoflix" | grep -q . && docker stop emoflix && docker rm -fv emoflix
+          if [ $(docker ps -q --filter "name=emoflix") ]; then
+            echo "Stopping and removing the emoflix container..."
+            docker stop emoflix
+            docker rm -fv emoflix
+          else
+            echo "No running container named emoflix found."
+          fi
+
        
       - name: Run Docker Image to serve users
         run: |
